@@ -1,12 +1,14 @@
 import './App.css'
 import { useState, useEffect } from 'react'
 import PageRender from './PageRender'
+import testConfig from './assets/testPage2'
+// import testConfig from './assets/testLister'
 
 const parentOrigin = 'http://localhost:5175'
 
 
 function App() {
-  const [config, setConfig] = useState({})
+  const [config, setConfig] = useState(testConfig)
    useEffect(() => {
     // 监听 message 事件
     const handleMessage = (event) => {
